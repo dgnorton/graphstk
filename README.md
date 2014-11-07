@@ -5,7 +5,7 @@ Generate graphviz from golang stack trace
 
 example usage
 =============
-
+```
 graphstk > stack.png <<EOF
 /home/dgnorton/go/src/github.com/influxdb/influxdb/datastore/shard_datastore.go:189 (0x7c4f90)
 (*ShardDatastore).GetOrCreateShard: hopwatch.Printf("err=%s", err.Error()).Break()
@@ -16,4 +16,4 @@ graphstk > stack.png <<EOF
 /home/dgnorton/go/src/github.com/influxdb/influxdb/coordinator/command.go:359 (0x5a8145)
 (*CreateShardsCommand).Apply: createdShards, err := config.AddShards(c.Shards)
 EOF
-
+```
